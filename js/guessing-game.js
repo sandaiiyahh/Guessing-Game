@@ -96,6 +96,7 @@ playGame = () => {
         const header = document.getElementById('text-changer'); // get header element
         header.innerHTML = result; // change header element's innertext to result
 
+
         const higherOrLower = game.isLower() ? 'higher' : 'lower';
         const guide = document.getElementById('hint-giver');
         guide.innerHTML = `Guess ${higherOrLower}!`;
@@ -115,7 +116,8 @@ playGame = () => {
     const hint = document.getElementById('hint'); 
     hint.addEventListener('click', function() {
         const header = document.getElementById('text-changer');
-        header.innerHTML = `The number is among: ${game.provideHint()}!`;
+        const hintArray = game.provideHint();
+        header.innerHTML = `The number is among: ${hintArray[0]}, ${hintArray[1]}, and ${hintArray[2]}.`;
         hint.disabled = true;
         return header;
     });
