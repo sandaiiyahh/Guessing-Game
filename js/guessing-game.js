@@ -95,7 +95,14 @@ playGame = () => {
         const result = game.playersGuessSubmission(num); // save returned result into a variable
         const header = document.getElementById('text-changer'); // get header element
         header.innerHTML = result; // change header element's innertext to result
+
+        const higherOrLower = game.isLower() ? 'higher' : 'lower';
+        const guide = document.getElementById('hint-giver');
+        guide.innerHTML = `Guess ${higherOrLower}!`;
+        if (game.pastGuesses.length === 5 || game.win === true) guide.innerHTML = '';
+
         inputGuess.value = '';
+
 
         if (game.pastGuesses.length === 5 || game.win === true) button.disabled = true; // feels weird to put here but it works
     });
