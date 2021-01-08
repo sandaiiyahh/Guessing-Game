@@ -1,1 +1,86 @@
 /* Write your CSS code in this file */
+
+body {
+    background-color: #f4f3ee;
+    font-family: monospace;
+    padding: 100px;
+    text-align: center;
+    margin-top: 100px;
+    position: relative;
+}
+
+img {
+    height: 150px;
+    height: 150px;
+}
+
+h1 {
+    font-size: 100px;
+    border: 4px solid black;
+    margin-bottom: -10px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+#guess {
+    height: 100px;
+    width: 90px;
+    font-size: 20px;
+}
+
+#guess-area input {
+    font-family: monospace;
+    font-size: 50px;
+    vertical-align: middle;
+}
+
+#guess-area button {
+    background-color: #ffadad;
+    height: 100px;
+    width: 80px;
+    vertical-align: middle;
+}
+
+#guess-area button:hover {
+    background-color: #ff9999;
+    transition: 0.3s;
+}
+
+#previous-guesses {
+    margin-top: 50px;
+    margin-bottom: -10px;
+}
+
+ul {
+    text-align: center;
+    list-style-position: inside;
+    font-size: 20px;
+}
+
+button {
+    font-family: monospace;
+    font-size: 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#reset {
+    background-color:#555b6e;
+    color: white;
+}
+
+#reset:hover {
+    background-color: #3b404d;
+    transition: 0.3s;
+}
+
+#hint {
+    background-color: #ffd9a7;
+}
+
+#hint:hover {
+    background-color: #ffbf93;
+    transition: 0.3s;
+}

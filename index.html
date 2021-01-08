@@ -8,13 +8,41 @@
     <!-- the MAIN.CSS file is linked here -->
   </head>
 
+
   <body>
 
+    <header>
+      <img src="magnifier.png">
+      <h1>The Guessing Game</h1>
+      <h2 id="text-changer">Guess a number from 1-100!</h2>
+    </header>
 
 
+    <div id = "guess-area">
+      <input type = "text" id = "guess" name = "guess" maxlength = "3" pattern="[0-9]+" autofocus>
+      <button id = "submit">GO!</button> 
+    </div>
 
 
-    <!-- <script src='js/guessing-game.js'></script> -->
+    <div id = "previous-guesses">
+      <ul id = 'guess-list'>
+        <h3>Previous Guesses</h3>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+
+
+    <div id = "bottom-buttons">
+      <button id = "reset">START OVER</button>
+      <button id = "hint">HINT</button>
+    </div>
+
+
+    <script src='js/guessing-game.js'></script>
     <!-- uncomment the script tag above when you are ready to add JavaScript to your document -->
   </body>
 
