@@ -2,7 +2,7 @@
 
 ## Description
 
-A basic guessing game the user gets five tries to guess a number between 1-100. They also get an option to use a hint button.
+A basic guessing game created during bootcamp where the user gets five tries to guess a number between 1-100. They also have an option to get one hint.
 
 Created using JavaScript, HTML, and CSS.
 
