@@ -8,4 +8,4 @@ Created using JavaScript, HTML, and CSS.
 
 ## LINK
 
-https://sandaiiyahh.github.io/guessing-game/
+https://sandaiiyahh.github.io/Guessing-Game/
